@@ -3,7 +3,10 @@ const morgan = require("morgan");
 const expressLayouts = require("express-ejs-layouts");
 const path = require("node:path");
 
-const { crearIdentificadorSolicitud, medirDuracion } = require("./middleware/solicitudes");
+const {
+  crearIdentificadorSolicitud,
+  medirDuracion,
+} = require("./middleware/solicitudes");
 const { crearControladorReservas } = require("./controladores/reservas");
 const { crearRouterReservas } = require("./rutas/reservas");
 

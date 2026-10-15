@@ -1,20 +1,20 @@
 const { Reserva } = require("../src/modelos/reserva");
 async function main() {
-    const reserva = new Reserva({
-      estudiante: "Alejandra Mansi",
-      email: "alejandramans@hotmail.com",
-      sala: "Sala Norte",
-      fecha: "2026-10-11",
-      turno: "Noche",
-      personas: 2,
-    });
-    await reserva.validate();
-    console.log("Datos válidos; todavía se guarda en MongoDB.");
+  const reserva = new Reserva({
+    estudiante: "Alejandra Mansi",
+    email: "alejandramans@hotmail.com",
+    sala: "Sala Norte",
+    fecha: "2026-10-11",
+    turno: "Noche",
+    personas: 2,
+  });
+  await reserva.validate();
+  console.log("Datos válidos; todavía se guarda en MongoDB.");
 }
 main().catch((error) => {
-    console.error("Validación rechazada:", error.name);
-    if (error.errors) {
-        console.error("Campos a revisar:", Object.keys(error.errors).join(", "));
-    }
-    process.exitCode = 1;
+  console.error("Validación rechazada:", error.name);
+  if (error.errors) {
+    console.error("Campos a revisar:", Object.keys(error.errors).join(", "));
+  }
+  process.exitCode = 1;
 });
