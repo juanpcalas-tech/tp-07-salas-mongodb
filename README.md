@@ -1,4 +1,4 @@
-# tp-07-salas-mongodb
+## tp-07-salas-mongodb
 Pesistencia de Datos en Reserva de Salas a traves de MongoDB
 
 ACLARACION: Algunas evidencias (Conexxion base de DEatos, listar Crear se adjuntan en Carpeta docuementos/evidencias)
@@ -143,22 +143,24 @@ ACLARACION: Algunas evidencias (Conexxion base de DEatos, listar Crear se adjunt
 
 7. Matriz de pruebas
 
-│CASO                           │RESULTADO OBSERVADO
-│Conexión válida	            │OK
-│Variable vacía	                │Error de configuración
-│Contraseña incorrecta	        │Error de autenticación
-│Reserva válida	                │Documento creado
-│Consulta desde nuevo proceso	│Documento recuperado
-│Segunda consulta	            │Sin cambios
-│Estudiante vacío	            │Rechazado
-│Email sin @	                │Rechazado
-│Sala inválida	                │Rechazado
-│Turno inválido	                │Rechazado
-│Fecha vacía	                │Rechazado
-│Personas = 0	                │Rechazado
-│Personas = 7	                │Rechazado
-│Personas = 2.5	                │Rechazado
-│Texto en personas	            │Rechazado        
+| CASO | RESULTADO OBSERVADO |
+| --- | --- |
+| Conexión válida | OK |
+|Variable vacía|Error de configuración|
+|Contraseña incorrecta|Error de autenticación|
+|Reserva válida|Documento creado|
+|Consulta desde nuevo proceso|Documento recuperado|
+|Segunda consulta|Sin cambios|
+|Estudiante vacío|Rechazado|
+|Email sin @|Rechazado|
+|Sala inválida|Rechazado|
+|Turno inválido|Rechazado|
+|Fecha vacía|Rechazado|
+|Personas = 0|Rechazado|
+|Personas = 7|Rechazado|
+|Personas = 2.5|Rechazado|
+|Texto en personas|Rechazado|    
+
 
 8. Continuidad del sitio
     El sitio Express continúa funcionando en memoria exactamente como en el TP06.
