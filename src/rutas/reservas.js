@@ -8,6 +8,7 @@ function crearRouterReservas(controladorReservas) {
   const router = express.Router();
   router.use(prepararAreaReservas);
   router.get("/", controladorReservas.listar);
+   router.get("/estado", controladorReservas.estado);
   router.get("/nueva", controladorReservas.mostrarFormulario);
   router.get("/:id", controladorReservas.mostrarDetalle);
   router.post("/", validarDatosReserva, controladorReservas.crear);

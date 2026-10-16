@@ -30,10 +30,15 @@ function crearControladorReservas(servicioReservas) {
     servicioReservas.crear(req.reservaValidada);
     res.redirect("/reservas");
   }
-
+  function estado(req, res) {
+    res.status(200).json({
+      cantidad: servicioReservas.contar(),
+      idSolicitud: req.idSolicitud,
+    });
+  }
   function listarApi(req, res) {
     res.json(servicioReservas.listar());
   }
-  return { listar, mostrarFormulario, mostrarDetalle, crear, listarApi };
+  return { listar, mostrarFormulario, mostrarDetalle, crear, estado, listarApi };
 }
 module.exports = { crearControladorReservas };
