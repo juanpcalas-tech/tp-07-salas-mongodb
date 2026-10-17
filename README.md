@@ -62,7 +62,7 @@ ACLARACION: Algunas evidencias (Conexxion base de DEatos, listar Crear se adjunt
         b. npm run validar
         c. npm run listar
         d. npm run crear
-        e. npm run listar
+        e. npm run start
 
     G. Controles de calidad
         npm run format
